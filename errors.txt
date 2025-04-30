@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/poems.rpy", line 702: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        font"gui/font/b1.ttf
+
+Ren'Py Version: Ren'Py 8.3.7.25031702
+Tue Apr 29 20:00:27 2025
