@@ -242,6 +242,12 @@ image glitch_color2:
         alpha 0.7
         linear 0.45 alpha 0
 
+image bosstones 1 = "bosstones/b1.png"
+image bosstones y1 = "yb/rbf2.png"
+
+image yb 1 = "yb/rbf.png"
+image yb 2 = "yb/rbf2.png"
+
 image sayori 1 = Composite((960, 960), (0, 0), "sayori/1l.png", (0, 0), "sayori/1r.png", (0, 0), "sayori/a.png")
 image sayori 1a = Composite((960, 960), (0, 0), "sayori/1l.png", (0, 0), "sayori/1r.png", (0, 0), "sayori/a.png")
 image sayori 1b = Composite((960, 960), (0, 0), "sayori/1l.png", (0, 0), "sayori/1r.png", (0, 0), "sayori/b.png")
@@ -890,6 +896,8 @@ image yuri 2 = Composite((960, 960), (0, 0), "yuri/1l.png", (0, 0), "yuri/2r.png
 image yuri 3 = Composite((960, 960), (0, 0), "yuri/2l.png", (0, 0), "yuri/2r.png", (0, 0), "yuri/a.png")
 image yuri 4 = Composite((960, 960), (0, 0), "yuri/3.png", (0, 0), "yuri/a2.png")
 
+image yuri rbf = "yuri/rbf.png"
+image yuri rbf2 = "yuri/rbf2.png"
 image yuri 1a = Composite((960, 960), (0, 0), "yuri/1l.png", (0, 0), "yuri/1r.png", (0, 0), "yuri/a.png")
 image yuri 1b = Composite((960, 960), (0, 0), "yuri/1l.png", (0, 0), "yuri/1r.png", (0, 0), "yuri/b.png")
 image yuri 1c = Composite((960, 960), (0, 0), "yuri/1l.png", (0, 0), "yuri/1r.png", (0, 0), "yuri/c.png")
@@ -1312,6 +1320,8 @@ define s = DynamicCharacter('s_name', image='sayori', what_prefix='"', what_suff
 define m = DynamicCharacter('m_name', image='monika', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define n = DynamicCharacter('n_name', image='natsuki', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define y = DynamicCharacter('y_name', image='yuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define yb = DynamicCharacter('y_name', image='yb', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define b = DynamicCharacter('b_name', image='bosstones', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define ny = Character('Nat & Yuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 
 define _dismiss_pause = config.developer

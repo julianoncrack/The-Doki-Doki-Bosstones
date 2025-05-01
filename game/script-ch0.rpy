@@ -30,6 +30,7 @@ label ch0_main:
     "However, I just sigh and idle in front of the crosswalk and let Sayori catch up to me."
 
     $ s_name = "Sayori"
+    $ b_name = "Bosstones"
 
     show sayori 4p zorder 2 at t11
 
@@ -90,39 +91,40 @@ label ch0_main:
 
     "I'm sure it's possible that I did, in one of our many conversations where I dismissively go along with whatever she's going on about."
 
-    "Sayori likes to worry a little too much about me, when I'm perfectly content just getting by on the average while spending my free time on games and anime."
+    "Sayori likes to worry a little too much about me, when I'm perfectly content just getting by on the average while spending my free time on ska."
 
     s 4j "Uh-huh!"
 
-    s "I was talking about how I'm worried that you won't learn how to socialize or have any skills before college."
+    mc "I guess I'll check out some clubs later."
 
-    s "Your happiness is really important to me, you know!"
+    s "Yaay!~"
 
-    s "And I know you're happy now, but I'd die at the thought of you becoming a NEET in a few years because you're not used to the real world!"
+    hide sayori
+    show bosstones 1 zorder 2 at t11
 
-    s 4g "You trust me, right?"
+    b "Hey [player]."
 
-    s "Don't make me keep worrying about you..."
+    mc "Holy shit is that the Bosstones?"
 
-    mc "Alright, alright..."
+    b "You're gonna be walking with us instead."
 
-    mc "I'll look at a few clubs if it makes you happy."
+    show sayori 5 zorder 3 at t11
 
-    mc "No promises, though."
+    s "Hey! You aren't going to leave me for a ska band right?"
 
-    s 1h "Will you at least promise me you'll try a little?"
+    mc "Sorry Sayori... It's the Bosstones."
 
-    mc "Yeah, I guess I'll promise you that."
+    s "W-what?"
 
-    show sayori zorder 2 at t11
+    b "Come on [player], we're gonna be late."
 
-    s 4r "Yaay~!"
+    mc "Bye Sayori!"
 
-    "Why do I let myself get lectured by such a carefree girl?"
+    hide sayori
 
-    "More than that, I'm surprised I even let myself relent to her."
+    "I can't believe I'm walking to school with The Mighty Mighty Bosstones!"
 
-    "I guess seeing her worry so much about me makes me want to ease her mind at least a little bit - even if she does exaggerate everything inside of her head."
+    "This kicks ass!"
 
     scene bg class_day
     with wipeleft_scene
@@ -203,6 +205,10 @@ label ch0_main:
 
     mc "Fine... I'll stop by for a cupcake, okay?"
 
+    show bosstones 1 zorder 2 at t33
+
+    b "We're coming too."
+
     show sayori at h11
 
     s 4r "Yes! Let's go~!"
@@ -224,26 +230,25 @@ label ch0_main:
     play music t3
 
     show sayori 4 at l41
+    show bosstones 1 zorder 2 at t33
 
-    s "Everyone! The new member is here~!"
+    s "Everyone! The new members are here~!"
 
     mc "I told you, don't call me a 'new member--'"
 
     show sayori at lhide
     hide sayori
+    hide bosstones
+
+    show yuri 1bp zorder 2 at t22
 
     "Eh? I glance around the room."
 
-    show yuri 1a zorder 2 at t11
+    y "HOLY SHIT DID YOU BRING THE BOSSTONES?"
 
-    y "Welcome to the Literature Club. It's a pleasure meeting you."
-
-    y "Sayori always says nice things about you."
-
-    show yuri zorder 2 at t22
     show natsuki 4c zorder 2 at t21
 
-    n "Seriously? You brought a boy?"
+    n "Seriously? You brought a ska band?"
 
     n "Way to kill the atmosphere."
 
@@ -252,6 +257,8 @@ label ch0_main:
     show monika 1k zorder 2 at t31
 
     m "Ah, [player]! What a nice surprise!"
+
+    m "And the Bosstones too!"
 
     m "Welcome to the club!"
 
@@ -263,13 +270,15 @@ label ch0_main:
 
     "This club..."
 
-    "{i}...is full of incredibly cute girls!!{/i}"
+    "{i}...is full of incredibly cute girls!! And the Bosstones!{/i}"
 
     show monika zorder 1 at thide
     show yuri zorder 1 at thide
     show natsuki zorder 3 at f32
+    show bosstones zorder 2 at s11
     hide monika
     hide yuri
+    hide bosstones
 
     n 2c "What are you looking at?"
 
@@ -314,7 +323,7 @@ label ch0_main:
 
     y 4b "D-Don't say things like that..."
 
-    "Yuri, who appears comparably more mature and timid, seems to have a hard time keeping up with people like Sayori and Natsuki."
+    "Yuri, who appears comparably more mature and timid, seems to have a hard time keeping up with people like Sayori and Natsuki. She also seems to like ska."
 
     show yuri zorder 2 at t33
 
