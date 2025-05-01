@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script-ch0.rpy", line 210: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        b "We're coming too.
+
+Ren'Py Version: Ren'Py 8.3.7.25031702
+Wed Apr 30 18:01:10 2025
